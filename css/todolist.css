@@ -1,0 +1,140 @@
+/* ==================== common css start ================ */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+img{
+    vertical-align: middle;
+    min-height: 100%;
+    height: 100%;
+}
+body {
+    background: url(../images/todo-image/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+/* ==================== common css end   ================ */
+/* ==================== Head part        ================ */
+.main {
+    padding: 25px 40px 40px;
+    width: 700px;
+    background-color: aliceblue;
+    border-radius: 12px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+}
+.main .bg-pic {
+    position: absolute;
+    top: 20px;
+    left: 390px;
+    transform: rotate(-16deg);
+}
+.main .todoHead {
+    display: flex;
+    justify-content: space-between;
+}
+.todoHead .todo_text h1 img {
+    width: 35px;
+}
+.todoHead .counter {
+    width: 100px;
+    height: 100px;
+    border: 2px solid gray;
+    border-radius: 50%;
+    font-size: 35px;
+    margin-right: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+/* ======================== adding part ================= */
+.event {
+    width: 600px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.09);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.event input {
+    width: 450px;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 20px;
+    padding-left: 25px;
+    font-weight: 500;
+}
+.event button {
+    width: 150px;
+    height: 100%;
+    border: none;
+    border-radius: 30px;
+    background-color: #87A2FF;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+.event button i {
+    color: #347928;
+}
+/* ======================= todo list ============= */
+.todo_list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.todo_list .singleToDoList {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.todo_list .singleToDoList .circle {
+    font-size: 25px;
+    color: green;
+    border: 2px solid gray;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo_list .singleToDoList input {
+    border: none;
+    outline: none;
+    width: 400px;
+    background-color: transparent;
+    padding-left: 5px;
+    font-size: 23px;
+    
+}
+.todo_list .singleToDoList button {
+    background-color: red;
+    border: none;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 10px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.todo_list .singleToDoList .editButton {
+    background-color: yellow;
+    color: #000;
+    margin-left: 10px;
+}
+
+

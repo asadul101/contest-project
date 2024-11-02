@@ -1,0 +1,143 @@
+
+/* ================== common css ==================== */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url(../images/game/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+h1,h2,h3,h4,h5,h6,p,span {
+    font-family: sans-serif;
+    /* color: #fff; */
+}
+button {
+    cursor: pointer;
+}
+/* ================== players CSS =================== */
+.gamebar {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px 40px;
+    border-radius: 12px;
+    border: 2px solid #fff;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.gamebar .gameHead {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.gameHead h1 {
+    font-size: 50px;
+}
+.gameHead .game_text h2 {
+    width: 510px;
+}
+.game_text h2 i {
+    color: yellow;
+}
+.gamebar .event {
+    border: 2px solid skyblue;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gamebar .event input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border: 20px;
+    width: 448px;
+    height: 40px;
+    font-size: 25px;
+    padding-left: 20px;
+    color: #fff;
+}
+.gamebar .event button {
+    padding: 10px 15px;
+    border-radius: 18px;
+    font-size: 25px;
+    border: none;
+    background-color: yellow;
+
+}
+.playerOne {
+    display: none;
+}
+/* ================== player 2 and 3 css =============== */
+.gamebar .chances {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border: 2px solid greenyellow;
+}
+.gamebar .chances span {
+    color: lime;
+    font-size: 35px;
+}
+.playerTwo {
+    display: none;
+}
+.playerTwo .gameHead h1 {
+    color: rgb(0, 98, 255);
+} 
+.playerThree {
+    display: none;
+}
+.playerThree .gameHead h1 {
+    color: yellowgreen;
+}
+.show {
+    color: gold;
+}
+/* ===================== wiiner css ================= */
+.winnerDiv {
+    position: relative;
+    display: none;
+}
+.winnerDiv img {
+    border-radius: 20px;
+    border: 2px solid #fff;
+    width: 300px;
+}
+.winnerDiv h3 {
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 20px;
+    left: 45px;
+}
+/* ====================== start css ================== */
+.start img {
+    cursor: pointer;
+}
+/* ============= error css ========= */
+.error {
+    color: red;
+    margin-bottom: 10px;
+}
+.error i {
+    color: orangered;
+}

@@ -1,0 +1,154 @@
+/* ====================== Font Links Start ================== */
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* ======================   Font link End  ================== */
+/* ====================== common css start ================== */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --yellowtail: "Yellowtail", cursive;
+    --roboto: "Roboto", sans-serif;
+}
+body {
+    background: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* ====================== common css end   ================== */
+/* ====================== Canva part start ================== */
+
+
+#home {
+    display: none;
+}
+
+
+
+/*  */
+.canva img{
+    width: 800px;
+    border-radius: 8px;
+    animation: canva .5s;
+    animation-delay: .4s;
+}
+.canva i {
+    font-size: 50px;
+    margin-left: 10px;
+    color: rgb(225, 168, 63);
+    cursor: pointer;
+}
+@keyframes canva {
+    from{
+        transform: scale(.1) rotateY(1deg); 
+    }
+    to{
+        transform: scale(1) rotateY(360deg);
+    }
+}
+/* ====================== Canva part end   ================== */
+/* ====================== greeting part start =============== */
+.greet {
+    display: none;
+}
+.greet .main_greet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 17px;
+}
+.main_greet h1 {
+    font-family: var(--yellowtail);
+    font-size: 70px;
+    font-weight: 700;
+    color: #FFF100;
+}
+
+.main_greet h2 {
+    font-family: var(--roboto);
+    font-size: 25px;
+    color: #80C4E9;
+    margin-right: 101px;
+}
+.main_greet h3 {
+    margin-left: 241px;
+    font-family: var(--roboto);
+    font-size: 25px;
+    color: #92C7CF;
+}
+/* ====================== greeting part end ================== */
+/* ====================== name part start   ================== */
+.name {
+    padding: 10px 20px;
+    border: 3px solid #789DBC;
+    border-radius: 10px;
+    background-color: rgba(0, 151, 255, 0.12);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    display: none;
+}
+.name .error {
+    color: rgb(255, 109, 56);
+    font-size: 20px;
+    font-family: var(--roboto);
+    margin-left: 63px;
+    margin-top: 10px;
+}
+.name h1 {
+    font-size: 34px;
+    font-family: var(--roboto);
+    font-weight: 600;
+    color: #fff;
+}
+.name .event {
+    border: 2px solid #B5C0D0;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 400px;
+    display: flex;
+    align-items: center;
+}
+.name .event input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding-left: 10px;
+    width: 350px;
+    height: 30px;
+    color: #fff;
+    font-size: 25px;
+    font-family: var(--roboto);
+    font-weight: 500;
+}
+.name .event button {
+    padding: 5px 10px;
+    font-family: var(--roboto);
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    color: #fff;
+    background-color: #69cede;
+}
+/* ====================== name part end     ================== */
